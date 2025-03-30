@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Subscribe Button */
+.subscribe-container {
+    position: relative;
+    display: inline-block;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+/* Subscribe state */
+.subscribe {
+    background-color: black;
+    color: white;
+}
+
+.subscribe:hover {
+    background-color: #333;
+}
+
+.subscribed .fas.fa-bell {
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+
+/* Dropdown menu */
+.hidden {
+    display: none;
+}
+
+.dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 180px;
+    z-index: 10;
+}
+
+.notification-option,
+.unsubscribe-option {
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification-option:first-child i {
+    color: black;
+    -webkit-text-stroke: 0;
+}
+
+.notification-option i {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    /* Adds a black border */
+}
+
+.unsubscribe-option {
+    color: black;
+    font-weight: none;
+    text-align: center;
+}
+
+.unsubscribe-option i {
+    font-size: 17px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+
+.notification-option:hover,
+.unsubscribe-option:hover {
+    background: #f0f0f0;
+}
+
+/* Bell Swing Animation */
+.swing-bell {
+    display: inline-block;
+    animation: swing 1s ease-in-out;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

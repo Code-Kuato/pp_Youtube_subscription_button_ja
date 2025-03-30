@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Subscribe Button</title>
+    <link rel="stylesheet" href="btnStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--<script src="btnClick.js" defer></script> for faster rendering -->
+</head>
+
+<body>
+
+    <div class="subscribe-container">
+        <button id="subscribe-btn" class="subscribe">Subscribe</button>
+        <div id="dropdown-menu" class="dropdown hidden">
+            <div class="notification-option">
+                <i class="fas fa-bell"></i>
+                <span>All</span>
+            </div>
+            <div class="notification-option">
+                <i class="fas fa-bell"></i>
+                <span>Personalized</span>
+            </div>
+            <div class="notification-option">
+                <i class="fas fa-bell-slash"></i>
+                <span>None</span>
+            </div>
+            <div id="unsubscribe-btn" class="unsubscribe-option">
+                <i class="fas fa-user-alt"></i> <!-- Add the user's icon here -->
+                <span>Unsubscribe</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="btnClick.js"></script>
+</body>
+
+</html>
